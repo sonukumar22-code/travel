@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Sonu Kumar's travel portfolio — journeys, photography and memories across India.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sonukumar22-code.github.io/travel/">
+<meta property="og:title" content="Sonu Kumar · Travel Portfolio">
+<meta property="og:description" content="Collecting memories, to make a story. Explore Sonu Kumar's travel journeys and photography across India.">
+<meta property="og:image" content="https://sonukumar22-code.github.io/travel/linkedin-preview.jpg.jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sonu Kumar Travel Portfolio">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sonu Kumar · Travel Portfolio">
+<meta name="twitter:description" content="Collecting memories, to make a story.">
+<meta name="twitter:image" content="https://sonukumar22-code.github.io/travel/linkedin-preview.jpg.jpeg">
+<title>Sonu Kumar · Travel Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f0e4;--ink:#10241f;--mute:#5c6b64;--gold:#9a7a2e;--line:#d8cdb4;--panel:#efe6d3;--wine:#6b1d2a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1c18;--ink:#f3ead8;--mute:#9fb0a7;--gold:#d6b66b;--line:#274038;--panel:#102923;--wine:#9b2f43}}
+:root[data-theme="dark"]{--bg:#0b1c18;--ink:#f3ead8;--mute:#9fb0a7;--gold:#d6b66b;--line:#274038;--panel:#102923;--wine:#9b2f43}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Jost',system-ui,-apple-system,sans-serif;font-weight:300;line-height:1.7;font-size:17px}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+.serif{font-family:'Cormorant Garamond',Georgia,'Times New Roman',serif}
+.hero{padding:72px 0 44px;border-bottom:1px solid var(--gold)}
+.hero .intro{color:var(--gold);letter-spacing:.04em;margin:0 0 14px}
+.hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-style:italic;font-size:clamp(52px,12vw,128px);line-height:.92;margin:0 0 22px;letter-spacing:-.01em}
+.hero h1 b{font-weight:600;font-style:normal;display:block}
+.hero p{max-width:46ch;color:var(--mute);margin:0 0 28px}
+.links{display:flex;gap:22px;flex-wrap:wrap}
+.links a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:3px;font-weight:400}
+.links a:focus-visible,.tab:focus-visible,.row:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.route{margin:38px 0 0;overflow-x:auto}
+.route svg{min-width:620px;width:100%;height:auto;display:block}
+.route text{font-family:'Cormorant Garamond',Georgia,serif;font-size:19px;fill:var(--ink);font-style:italic}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin:0;border-bottom:1px solid var(--line)}
+.fact{padding:26px 18px 26px 0}
+.fact b{display:block;font-family:'Cormorant Garamond',Georgia,serif;font-size:44px;font-weight:600;color:var(--gold);line-height:1}
+.fact small{color:var(--mute)}
+h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(34px,6vw,54px);margin:64px 0 4px;line-height:1.05}
+.sub{color:var(--mute);margin:0 0 22px}
+.tabs{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:8px;border-bottom:1px solid var(--line)}
+.tab{font:inherit;background:none;border:0;border-bottom:2px solid transparent;color:var(--mute);padding:8px 0;cursor:pointer;margin-bottom:-1px}
+.tab[aria-pressed="true"]{color:var(--ink);border-bottom-color:var(--gold)}
+.row{all:unset;box-sizing:border-box;display:grid;grid-template-columns:84px 1fr auto;gap:0 18px;align-items:center;width:100%;padding:20px 0;border-bottom:1px solid var(--line);cursor:pointer}
+.row[hidden]{display:none}
+.bar{width:84px;height:84px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);padding:3px;background:var(--bg);grid-row:1/3;image-rendering:auto}
+.row h3{margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(28px,5vw,40px);line-height:1.1}
+.row .where{color:var(--gold);font-size:15px;text-align:right}
+.row .desc{grid-column:2/4;grid-row:2;color:var(--mute)}
+.row .more{grid-column:2/4;display:none;margin-top:8px;font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;font-style:italic;color:var(--ink);max-width:48ch}
+.row[aria-expanded="true"] .more{display:block}
+.row[aria-expanded="true"] h3{color:var(--gold)}
+.dream{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.dream div{background:var(--panel);border:1px solid var(--gold);padding:30px 26px}
+.dream h3{margin:0 0 6px;font-family:'Cormorant Garamond',Georgia,serif;font-size:38px;font-weight:600;font-style:italic}
+footer{margin:72px 0 40px;padding-top:24px;border-top:1px solid var(--gold);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--mute)}
+footer a{color:var(--ink)}
+@media (prefers-reduced-motion:no-preference){.route path.trail{stroke-dasharray:1000;stroke-dashoffset:1000;animation:d 3.2s ease forwards}@keyframes d{to{stroke-dashoffset:0}}}
+.bar.has{cursor:zoom-in;box-shadow:0 0 0 3px color-mix(in srgb,var(--gold) 35%,transparent)}
+#lb{position:fixed;inset:0;z-index:50;background:rgba(5,14,12,.92);display:flex;flex-direction:column;align-items:center;padding:calc(env(safe-area-inset-top,0px) + 56px) 16px calc(env(safe-area-inset-bottom,0px) + 20px);overflow-y:auto}
+#lb[hidden]{display:none}
+#lbi{display:flex;flex-direction:column;gap:14px;align-items:center;max-width:620px;width:100%}
+#lbi img{max-width:100%;height:auto;border:2px solid #d6b66b;border-radius:6px}
+#lbx{position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);right:16px;font:inherit;font-size:16px;color:#f3ead8;background:none;border:1px solid #d6b66b;border-radius:999px;padding:8px 18px;cursor:pointer}
+#lbx:focus-visible{outline:2px solid #d6b66b;outline-offset:3px}
+.scrollrow{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:34px;padding-top:12px;border-top:1px solid var(--gold);color:var(--mute)}
+.scrollrow a{color:var(--gold);text-decoration:none;font-size:26px;line-height:1}
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:26px 16px;align-items:start;grid-auto-flow:dense}
+.gi{margin:0}.gi.w{grid-column:1/-1}.gi:nth-child(even):not(.w){margin-top:40px}
+.gi button{all:unset;display:block;width:100%;cursor:zoom-in}
+.gi button:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.gi img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.gi figcaption{margin-top:8px;font-size:14px;color:var(--mute)}
+@media (min-width:760px){.gal{grid-template-columns:repeat(3,1fr);gap:40px 28px}.gi.w{grid-column:span 2}.gi:nth-child(even):not(.w){margin-top:0}.gi:nth-child(3n+2):not(.w){margin-top:56px}}
+.inq::before,.inq::after{display:none!important;content:none!important}.inq svg,.inq img,.inq .arrow,.inq [class*="arrow"]{display:none!important}.inq{margin-top:72px;padding:48px 28px;background:#0a2420;color:#f3ead8;border-radius:4px}
+.inq h2{margin:0 0 6px;color:#f3ead8;font-size:clamp(40px,8vw,72px)}
+.inq p{margin:0 0 28px;color:#b9c7bf}
+.inq dl{margin:0;display:grid;gap:22px}.inq dt{font-size:13px;color:#d6b66b;letter-spacing:.04em}.inq dd{margin:2px 0 0;font-size:19px;word-break:break-word}
+.inq a{color:#f3ead8;text-decoration:none;border-bottom:1px solid #d6b66b;padding-bottom:2px}
+.inq a:focus-visible{outline:2px solid #d6b66b;outline-offset:4px}
+
+/* Professional editorial refresh */
+:root{--bg:#f5f1e8;--ink:#10221d;--mute:#68736d;--gold:#b08a3c;--line:#d9d1c2;--panel:#ebe4d6;--deep:#0a211c;--card:#fffdf8;--shadow:0 24px 70px rgba(16,34,29,.10)}
+:root[data-theme="dark"]{--bg:#071713;--ink:#f3eadb;--mute:#9caea5;--gold:#d5b66c;--line:#294039;--panel:#10251f;--deep:#06130f;--card:#0d211b;--shadow:0 24px 70px rgba(0,0,0,.28)}
+html{scroll-behavior:smooth}
+body{background:radial-gradient(circle at 80% 0%,rgba(176,138,60,.08),transparent 28%),var(--bg);letter-spacing:.01em}
+.wrap{max-width:1180px;padding:0 34px}
+.site-nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:relative;z-index:10}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand span{width:38px;height:38px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--gold);font-weight:600}
+.brand b{font-size:12px;letter-spacing:.18em;font-weight:500}
+.nav-links{display:flex;align-items:center;gap:28px}.nav-links a{color:var(--mute);text-decoration:none;font-size:13px;letter-spacing:.08em;text-transform:uppercase}.nav-links a:hover{color:var(--ink)}
+.theme-toggle{width:36px;height:36px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--ink);cursor:pointer;font-size:17px}
+.hero{padding:62px 0 30px;border-bottom:1px solid var(--gold)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(310px,.72fr);gap:72px;align-items:center}
+.hero-copy{padding:20px 0 30px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--gold);font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:500}.dot{width:6px;height:6px;background:var(--gold);border-radius:50%;display:inline-block}
+.hero h1{font-size:clamp(62px,8.5vw,122px);line-height:.84;margin:22px 0 28px;letter-spacing:-.025em}.hero h1 b{margin-top:6px}
+.hero-copy>p{font-size:18px;line-height:1.7;max-width:49ch;margin-bottom:34px}
+.links{gap:26px;align-items:center}.links a{font-size:13px;letter-spacing:.04em}.links .primary-link{background:var(--ink);color:var(--bg);border:0;padding:13px 18px;border-radius:999px;transition:transform .2s,box-shadow .2s}.links .primary-link span{margin-left:12px;color:var(--gold)}.links .primary-link:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(16,34,29,.15)}
+.hero-media{position:relative;min-height:520px;background:var(--panel);box-shadow:var(--shadow);overflow:hidden}.hero-media img{width:100%;height:520px;object-fit:cover;display:block;filter:saturate(.94) contrast(1.02)}.hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.12),transparent 42%,rgba(0,0,0,.58));pointer-events:none}.media-index{position:absolute;z-index:2;top:18px;right:18px;color:#fff;font-size:10px;letter-spacing:.18em}.media-index span{opacity:.55;margin:0 5px}.media-caption{position:absolute;z-index:2;left:22px;right:22px;bottom:20px;color:#fff;display:flex;justify-content:space-between;align-items:end}.media-caption span{font-size:11px;letter-spacing:.18em}.media-caption small{font-size:11px;opacity:.8}
+.route{margin:28px 0 0;padding-top:4px}.route svg{min-width:620px}.route text{font-size:16px}.scrollrow{margin-top:12px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;letter-spacing:.08em;text-transform:uppercase}.scrollrow a{display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--gold);border-radius:50%;font-size:18px}
+.facts{margin:28px 0 0;background:var(--card);border:1px solid var(--line);box-shadow:0 10px 35px rgba(16,34,29,.04)}.fact{padding:25px 26px;border-right:1px solid var(--line)}.fact:last-child{border-right:0}.fact b{font-size:38px}.fact small{font-size:12px;letter-spacing:.05em;text-transform:uppercase}
+section#gallery,section#places,section:not(.inq){scroll-margin-top:30px}h2{font-size:clamp(42px,5.5vw,68px);letter-spacing:-.02em;margin-top:88px}.sub{font-size:14px;letter-spacing:.03em}
+.gal{gap:34px 22px;margin-top:30px}.gi{background:var(--card);padding:10px 10px 14px;border:1px solid var(--line);box-shadow:0 12px 36px rgba(16,34,29,.05);transition:transform .3s ease,box-shadow .3s ease}.gi:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.gi img{border:0;aspect-ratio:4/5;object-fit:cover}.gi:nth-child(2) img,.gi:nth-child(4) img{aspect-ratio:4/5}.gi figcaption{padding:0 4px;margin-top:12px;font-size:11px;text-transform:uppercase;letter-spacing:.12em}.gi button{width:100%}
+.tabs{gap:26px;margin:30px 0 6px}.tab{font-size:12px;letter-spacing:.1em;text-transform:uppercase}.row{padding:23px 8px}.row:hover{background:rgba(176,138,60,.055)}.row h3{font-size:clamp(30px,4vw,46px)}.bar{width:76px;height:76px}.dream{gap:22px;margin-top:28px}.dream div{position:relative;background:var(--card);border:1px solid var(--line);padding:34px 30px;box-shadow:0 12px 36px rgba(16,34,29,.05)}.dream div:before{content:"NEXT CHAPTER";display:block;font-size:10px;letter-spacing:.16em;color:var(--gold);margin-bottom:18px}.dream h3{font-size:44px}
+.inq{margin-top:100px;padding:64px 56px;background:var(--deep);border-radius:0;display:grid;grid-template-columns:1.2fr .8fr;gap:60px;position:relative;overflow:hidden;box-shadow:var(--shadow)}.inq:after{display:none!important;content:none!important}.inq h2{font-size:clamp(46px,6vw,78px);line-height:.9;margin:18px 0 18px}.inq p{max-width:38ch;font-size:15px}.inq dl{gap:26px;align-content:center;position:relative;z-index:1}.inq dt{font-size:10px;letter-spacing:.16em;text-transform:uppercase}.inq dd{font-size:18px}.inq a{border-bottom-color:rgba(213,182,108,.6)}
+footer{margin:55px 0 28px;padding-top:24px;border-top:1px solid var(--line);font-size:12px;letter-spacing:.06em}footer div{display:flex;gap:16px;align-items:center}footer strong{font-size:11px;letter-spacing:.16em;color:var(--ink)}footer div span{color:var(--mute)}footer a{text-decoration:none;color:var(--gold)}footer .copyright{color:var(--mute)}
+@media (max-width:760px){.wrap{padding:0 18px}.site-nav{height:66px}.nav-links{gap:14px}.nav-links a{display:none}.brand b{font-size:11px}.hero{padding-top:35px}.hero-grid{grid-template-columns:1fr;gap:30px}.hero-media{min-height:0}.hero-media img{height:min(115vw,520px)}.hero h1{font-size:clamp(55px,17vw,88px)}.hero-copy>p{font-size:16px}.facts{grid-template-columns:1fr}.fact{border-right:0;border-bottom:1px solid var(--line);padding:20px}.fact:last-child{border-bottom:0}.inq{grid-template-columns:1fr;gap:28px;padding:42px 28px}.inq dl{gap:20px}.dream{grid-template-columns:1fr}.gal{gap:18px 12px}.gi{padding:7px 7px 12px}.gi:nth-child(even):not(.w){margin-top:25px}footer{display:grid;gap:15px}footer div{display:grid;gap:5px}}
+@media (prefers-reduced-motion:no-preference){.site-nav,.hero-copy,.hero-media,.facts,#gallery,#places,.dream,.inq{animation:rise .7s ease both}@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}}
+
+/* Fixes: contact heading clipping + page overflow */
+html,body{overflow-x:hidden;max-width:100%}
+.inq>*{min-width:0}
+.inq h2{overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:760px){.inq{grid-template-columns:minmax(0,1fr);padding:42px 22px}.inq h2{font-size:clamp(34px,10.5vw,52px);line-height:.98}.inq dd{font-size:17px}}
+:root{color-scheme:light}:root[data-theme="dark"]{color-scheme:dark}
+:root[data-theme="dark"] .links .primary-link{background:var(--ink);color:var(--bg)}
+
+/* ===== Professional polish ===== */
+:root{--gold:#a8832f;--line:#dcd4c4;--radius:6px;--ease:cubic-bezier(.2,.7,.2,1)}
+:root[data-theme="dark"]{--gold:#d5b66c;--line:#27403a}
+body{font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;counter-reset:sec}
+.wrap{max-width:1120px}
+::selection{background:var(--gold);color:var(--deep)}
+/* nav */
+.site-nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 86%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);margin:0 -34px;padding:0 34px}
+.brand span{width:34px;height:34px;font-size:15px;background:var(--card)}
+.brand b{letter-spacing:.2em;font-size:11.5px}
+.nav-links a{font-size:11.5px;letter-spacing:.14em;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.theme-toggle{width:34px;height:34px;font-size:15px;line-height:1;transition:border-color .2s,transform .2s}
+.theme-toggle:hover{border-color:var(--gold);transform:rotate(20deg)}
+/* hero */
+.hero{border-bottom:1px solid var(--line);padding:56px 0 26px}
+.hero h1{font-weight:500;line-height:.9;letter-spacing:-.03em}
+.hero h1 b{font-weight:600;color:var(--gold);font-style:italic}
+.hero-copy>p{color:var(--mute);font-size:17px}
+.links .primary-link{padding:14px 22px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;font-size:11.5px}
+.links a:not(.primary-link){font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);border-bottom-color:var(--line);transition:color .2s,border-color .2s}
+.links a:not(.primary-link):hover{color:var(--ink);border-bottom-color:var(--gold)}
+.hero-media{border-radius:var(--radius);box-shadow:0 30px 80px -30px rgba(16,34,29,.35)}
+.hero-media img{transition:transform 1.2s var(--ease)}
+.hero-media:hover img{transform:scale(1.03)}
+.route svg path.trail{stroke-width:1.2}
+.scrollrow{color:var(--mute)}
+/* facts */
+.facts{border-radius:var(--radius);overflow:hidden;box-shadow:none;margin-top:34px}
+.fact b{font-weight:500}
+.fact small{color:var(--mute);letter-spacing:.12em;font-size:11px}
+/* section headings */
+section:not(.inq):not(.facts)>h2{margin:96px 0 6px;font-weight:500;font-size:clamp(38px,5vw,60px)}
+section:not(.inq):not(.facts)>h2::before{counter-increment:sec;content:"0" counter(sec) "  /";display:block;font-family:'Jost',system-ui,sans-serif;font-size:11px;letter-spacing:.2em;color:var(--gold);font-weight:500;margin-bottom:14px}
+.sub{font-size:13px;letter-spacing:.06em;color:var(--mute);margin-bottom:26px}
+/* gallery */
+.gi{border-radius:var(--radius);padding:8px 8px 12px;box-shadow:0 1px 0 rgba(16,34,29,.04),0 14px 34px -18px rgba(16,34,29,.25);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.gi img{border-radius:3px}
+.gi figcaption{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);padding-top:10px}
+/* journeys */
+.tabs{border-bottom:1px solid var(--line);gap:30px}
+.tab{font-size:11.5px;letter-spacing:.16em;padding:12px 0;transition:color .2s}
+.tab:hover{color:var(--ink)}
+.row{border-bottom:1px solid var(--line);padding:22px 10px;border-radius:var(--radius);transition:background .25s,padding .25s var(--ease)}
+.row:hover{background:color-mix(in srgb,var(--gold) 7%,transparent)}
+.row h3{font-weight:500}
+.row .where{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.row .desc{font-size:15px}
+.row .more{font-size:21px;line-height:1.45;padding-top:6px;border-top:1px dashed var(--line);margin-top:12px}
+.bar{box-shadow:0 8px 20px -10px rgba(16,34,29,.45);border-width:1.5px}
+/* dream */
+.dream div{border-radius:var(--radius);border:1px solid var(--line);border-top:2px solid var(--gold);color:var(--mute);line-height:1.6;transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.dream div:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.dream h3{color:var(--ink);font-weight:500;font-size:34px}
+/* contact */
+.inq{border-radius:var(--radius);margin-top:110px}
+.inq h2{font-weight:500}
+.inq .eyebrow{letter-spacing:.2em}
+.inq dd a{transition:border-color .2s,color .2s}
+.inq dd a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+/* footer */
+footer{margin-top:64px;color:var(--mute);align-items:center}
+footer a{letter-spacing:.14em;text-transform:uppercase;font-size:11px}
+/* accessibility + motion */
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media (hover:none){.gi:hover,.dream div:hover{transform:none}.hero-media:hover img{transform:none}}
+@media (max-width:760px){.site-nav{margin:0 -18px;padding:0 18px}section:not(.inq):not(.facts)>h2{margin-top:72px}.hero h1{line-height:.92}.row{padding:20px 6px}}
+
+#lbi.pg{display:block;max-width:900px;align-items:stretch}
+#lbi.pg h2{font-family:'Newsreader','Georgia',serif;font-weight:500;font-size:clamp(34px,8vw,52px);line-height:1;margin:0 0 8px;color:#f3ead8}
+#lbi.pg .sub{color:#b9ad92;margin:0 0 22px;font-size:14px}
+#lbi.pg .gal{display:grid;grid-template-columns:1fr 1fr;gap:18px 12px;margin:0;align-items:start}
+#lbi.pg .gal.one{grid-template-columns:minmax(0,440px);justify-content:center}
+#lbi.pg .gi{background:#0f211c;border:1px solid #27403a;cursor:zoom-in;margin:0}
+#lbi.pg .gi:nth-child(even){margin-top:25px}
+#lbi.pg .gal.one .gi{margin-top:0}
+#lbi.pg .gi img{border:0;border-radius:3px;aspect-ratio:4/5;object-fit:cover;width:100%;max-width:100%}
+#lbi.pg .gi figcaption{color:#b9ad92}
+#lbi.pg .gi.big{grid-column:1/-1;margin-top:0;cursor:zoom-out}
+#lbi.pg .gi.big img{aspect-ratio:auto;max-height:82vh;object-fit:contain;background:#07120f}
+@media (min-width:900px){#lbi.pg .gal:not(.one){grid-template-columns:repeat(3,1fr)}}
+
+/* ===== Motion + final polish ===== */
+html{scroll-behavior:smooth}
+section[id],#gallery,#journeys,#contact{scroll-margin-top:84px}
+@keyframes up{from{opacity:0;translate:0 26px}to{opacity:1;translate:0 0}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes pop{from{opacity:0;scale:.94;translate:0 18px}to{opacity:1;scale:1;translate:0 0}}
+@keyframes shine{to{background-position:-200% 0}}
+@media (prefers-reduced-motion:no-preference){
+.hero-copy>*{animation:up .9s var(--ease) both}
+.hero-copy>*:nth-child(2){animation-delay:.12s}.hero-copy>*:nth-child(3){animation-delay:.24s}.hero-copy>*:nth-child(4){animation-delay:.36s}.hero-copy>*:nth-child(5){animation-delay:.48s}
+.hero-media{animation:fade 1.3s .2s both}
+.hero h1 b{background:linear-gradient(100deg,var(--gold) 38%,#f2dd9b 50%,var(--gold) 62%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 5s linear infinite}
+.route circle,.route svg text{animation:fade .8s 1.4s both}
+html.js .rv{opacity:0;translate:0 28px;transition:opacity .8s var(--ease),translate .8s var(--ease);transition-delay:var(--d,0s)}
+html.js .rv.in{opacity:1;translate:0 0}
+.row[aria-expanded="true"] .more{animation:up .45s var(--ease) both}
+#lb:not([hidden]){animation:fade .3s both}
+#lbi.pg .gi{animation:pop .6s var(--ease) both}
+#lbi.pg .gi:nth-child(2){animation-delay:.08s}#lbi.pg .gi:nth-child(3){animation-delay:.16s}#lbi.pg .gi:nth-child(4){animation-delay:.24s}#lbi.pg .gi:nth-child(5){animation-delay:.32s}
+.links .primary-link{position:relative;overflow:hidden}
+.links .primary-link::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.35) 50%,transparent 65%);translate:-120% 0;transition:translate .7s var(--ease)}
+.links .primary-link:hover::after{translate:120% 0}
+}
+.nav-links a{position:relative}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--gold);scale:0 1;transform-origin:left;transition:scale .35s var(--ease)}
+.nav-links a:hover::after,.nav-links a.active::after{scale:1 1}
+.nav-links a.active{color:var(--gold)}
+.bar.has{transition:transform .3s var(--ease),box-shadow .3s}
+.bar.has:hover{transform:scale(1.07)}
+.gi:hover{transform:translateY(-6px);box-shadow:0 26px 50px -22px rgba(16,34,29,.45)}
+.gi img{transition:transform .8s var(--ease)}.gi:hover img{transform:scale(1.04)}.gi{overflow:hidden}
+#totop{position:fixed;right:16px;bottom:calc(env(safe-area-inset-bottom,0px) + 18px);z-index:30;width:42px;height:42px;border-radius:50%;border:1px solid var(--gold);background:color-mix(in srgb,var(--bg) 88%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:var(--gold);font-size:18px;line-height:1;cursor:pointer;opacity:0;pointer-events:none;translate:0 12px;transition:opacity .3s,translate .3s,background .2s}
+#totop.show{opacity:1;pointer-events:auto;translate:0 0}
+#totop:hover{background:var(--gold);color:var(--deep)}
+@media (hover:none){.gi:hover{transform:none;box-shadow:inherit}.gi:hover img,.bar.has:hover{transform:none}}
+
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 5px}}
+@keyframes zoomIn{from{opacity:0;scale:.86;translate:0 24px}to{opacity:1;scale:1;translate:0 0}}
+@keyframes ring{from{box-shadow:0 0 0 0 color-mix(in srgb,var(--gold) 55%,transparent)}to{box-shadow:0 0 0 14px transparent}}
+.scrollrow a{transition:background .25s,color .25s,scale .2s}
+.scrollrow a:hover{background:var(--gold);color:var(--deep)}
+.scrollrow a:active{scale:.9}
+.gi{-webkit-tap-highlight-color:transparent}
+.gi:active{scale:.97;transition:scale .15s}
+@media (prefers-reduced-motion:no-preference){
+.scrollrow a{animation:bob 1.8s ease-in-out infinite,ring 2.4s ease-out infinite}
+.scrollrow a:hover{animation-play-state:paused}
+#lbi:not(.pg) img{animation:zoomIn .55s var(--ease) both}
+.gi.tap{animation:ring .6s ease-out}
+}
+.scrollrow{justify-content:space-between}
+
+.hero-media{min-height:0;background:transparent}
+.hero-media img{height:auto!important;max-height:none;object-fit:contain;translate:none!important}
+.media-caption{justify-content:flex-end}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="site-nav" aria-label="Primary navigation">
+  <a class="brand" href="#top" aria-label="Sonu Kumar home"><span>SK</span><b>SONU KUMAR</b></a>
+  <div class="nav-links">
+    <a href="#gallery">Gallery</a>
+    <a href="#places">Journeys</a>
+    <a href="#contact">Contact</a>
+    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
+  </div>
+</nav>
+<header class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="dot"></span> Travel portfolio · Salem, Tamil Nadu</div>
+      <h1>Collecting memories,<b>to make a story.</b></h1>
+      <p>A visual travel diary of temples, waterfalls, hill roads and the places that stay with me across India.</p>
+      <div class="links">
+        <a class="primary-link" href="#gallery">Explore the gallery <span>↗</span></a>
+        <a href="https://www.instagram.com/im._sonu03/" target="_blank" rel="noopener">Instagram @im._sonu03</a>
+      </div>
+    </div>
+    <div class="hero-media" aria-label="Featured travel portrait">
+      <div class="media-index">01 <span>/</span> FEATURED</div>
+      <img id="heroImage" alt="Sonu Kumar on a travel day beside his bike">
+      <div class="media-caption"><small>Salem · Tamil Nadu</small></div>
+    </div>
+  </div>
+  <div class="route">
+    <svg viewBox="0 0 700 300" role="img" aria-label="Travel route in order: Salem, Agra, Delhi, Lucknow, Bihar, Tiruvannamalai, Hogenakkal, Trichy, Isha, Chennai, Yercaud, Trivandrum">
+      <path class="trail" pathLength="1000" d="M74 78 C92.0 84.7 146.0 118.0 182 118 C218.0 118.0 254.0 78.0 290 78 C326.0 78.0 362.0 118.0 398 118 C434.0 118.0 470.0 78.0 506 78 C542.0 78.0 596.0 95.7 614 118 C632.0 140.3 632.0 189.7 614 212 C596.0 234.3 542.0 252.0 506 252 C470.0 252.0 434.0 212.0 398 212 C362.0 212.0 326.0 252.0 290 252 C254.0 252.0 218.0 212.0 182 212 C146.0 212.0 92.0 245.3 74 252" fill="none" stroke="#c9a24a" stroke-width="1.4"/>
+      <g fill="#c9a24a"><circle cx="74" cy="78" r="13" fill="none" stroke="#c9a24a" stroke-width="1.2"/><circle cx="74" cy="78" r="8"/><circle cx="182" cy="118" r="5"/><circle cx="290" cy="78" r="5"/><circle cx="398" cy="118" r="5"/><circle cx="506" cy="78" r="5"/><circle cx="614" cy="118" r="5"/><circle cx="614" cy="212" r="5"/><circle cx="506" cy="252" r="5"/><circle cx="398" cy="212" r="5"/><circle cx="290" cy="252" r="5"/><circle cx="182" cy="212" r="5"/><circle cx="74" cy="252" r="5"/></g>
+      <text x="74" y="56" text-anchor="middle">1. Salem</text><text x="182" y="148" text-anchor="middle">2. Agra</text><text x="290" y="62" text-anchor="middle">3. Delhi</text><text x="398" y="148" text-anchor="middle">4. Lucknow</text><text x="506" y="62" text-anchor="middle">5. Bihar</text><text x="614" y="148" text-anchor="middle">6. Tiruvannamalai</text><text x="614" y="196" text-anchor="middle">7. Hogenakkal</text><text x="506" y="282" text-anchor="middle">8. Trichy</text><text x="398" y="196" text-anchor="middle">9. Isha</text><text x="290" y="282" text-anchor="middle">10. Chennai</text><text x="182" y="196" text-anchor="middle">11. Yercaud</text><text x="74" y="282" text-anchor="middle">12. Trivandrum</text>
+    </svg>
+  </div>
+  <div class="scrollrow"><span>Travel storyteller</span><a href="#places" aria-label="Scroll to the journeys">&#8595;</a></div>
+</header>
+
+<section class="facts" aria-label="Quick facts">
+  <div class="fact"><b>13</b><small>journeys collected</small></div>
+  <div class="fact"><b>South to North</b><small>Kerala to Delhi</small></div>
+  <div class="fact"><b>2</b><small>dreams: Kedarnath, Kalpa</small></div>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <p class="sub">Tap a photo to view it larger.</p>
+  <div class="gal">
+<figure class="gi p"><button type="button" aria-label="Open photo: Portrait by the bike"><img loading="lazy" alt="Portrait by the bike" src="images/photo-01.jpg"></button><figcaption>Portrait by the bike</figcaption></figure>
+<figure class="gi p"><button type="button" aria-label="Open photo: Red and black scooter"><img loading="lazy" alt="Red and black scooter" src="images/photo-02.jpg"></button><figcaption>Red and black scooter</figcaption></figure>
+<figure class="gi p"><button type="button" aria-label="Open photo: Pool moment"><img loading="lazy" alt="Pool moment" src="images/photo-03.jpg"></button><figcaption>Pool moment</figcaption></figure>
+<figure class="gi p"><button type="button" aria-label="Open photo: Scooter ride"><img loading="lazy" alt="Scooter ride" src="images/photo-04.jpg"></button><figcaption>Scooter ride</figcaption></figure>
+  <figure class="gi p"><button type="button" aria-label="Open photo: Ready to ride"><img loading="lazy" alt="Ready to ride" src="images/photo-05.jpg"></button><figcaption>Ready to ride</figcaption></figure>
+<figure class="gi p"><button type="button" aria-label="Open photo: Family at the temple statue"><img loading="lazy" alt="Family at the temple statue" src="images/photo-06.jpg"></button><figcaption>Family at the temple statue</figcaption></figure>
+<figure class="gi p"><button type="button" aria-label="Open photo: Sunny day portrait"><img loading="lazy" alt="Sunny day portrait" src="images/photo-07.jpg"></button><figcaption>Sunny day portrait</figcaption></figure>
+<figure class="gi p"><button type="button" aria-label="Open photo: Window seat at sunset"><img loading="lazy" alt="Window seat at sunset" src="images/photo-08.jpg"></button><figcaption>Window seat at sunset</figcaption></figure>
+</div>
+</section>
+
+<section id="places">
+  <h2>The journeys</h2>
+  <p class="sub">Choose a theme, then tap a place to read its story.</p>
+  <div class="tabs" id="tabs">
+    <button class="tab" data-f="all" aria-pressed="true">All</button>
+    <button class="tab" data-f="north" aria-pressed="false">North India</button>
+    <button class="tab" data-f="south" aria-pressed="false">South India</button>
+    <button class="tab" data-f="faith" aria-pressed="false">Temples</button>
+    <button class="tab" data-f="nature" aria-pressed="false">Nature</button>
+  </div>
+  <div id="list"></div>
+</section>
+
+<section>
+  <h2>Dream destinations</h2>
+  <p class="sub">The next chapters.</p>
+  <div class="dream">
+    <div><h3>Kedarnath</h3>A Himalayan shrine, a long trek and cold mountain air.</div>
+    <div><h3>Kalpa</h3>Apple orchards and snow peaks in Himachal Pradesh.</div>
+  </div>
+</section>
+
+<section class="inq" id="contact">
+  <div class="contact-head"><span class="eyebrow"><span class="dot"></span> LET'S CONNECT</span><h2>Have a place<br>worth remembering?</h2><p>For collaborations, travel stories or simply to say hello.</p></div>
+  <dl>
+    <div><dt>Phone</dt><dd><a href="tel:+917806915571">+91 78069 15571</a></dd></div>
+    <div><dt>Email</dt><dd><a href="https://mail.google.com/mail/?view=cm&fs=1&to=sonukumar22bca@gmail.com&su=Hello%20Sonu" target="_blank" rel="noopener">sonukumar22bca@gmail.com</a> <button type="button" id="copyMail" style="margin-left:10px;font:inherit;font-size:13px;background:none;border:1px solid currentColor;color:inherit;border-radius:20px;padding:2px 12px;cursor:pointer;opacity:.85">Copy</button></dd></div>
+    <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/im._sonu03/" target="_blank" rel="noopener">@im._sonu03</a></dd></div>
+  </dl></section>
+
+<footer><div><strong>SONU KUMAR</strong><span>Travel storyteller · Salem, Tamil Nadu</span></div><a href="#top">Back to top ↑</a><span class="copyright">© 2026</span></footer>
+</div>
+<div id="lb" hidden role="dialog" aria-modal="true" aria-label="Travel photos"><button id="lbx">Close</button><div id="lbi"></div></div>
+<script>
+var P=[
+["Agra","Uttar Pradesh","north","Taj Mahal and its garden pool","Standing before the Taj Mahal, still one of my favourite frames.","#c9a24a"],
+["Delhi","Delhi","north","Red-brick architecture at night","Evening lights over old Delhi's red-brick buildings.","#9b2f43"],
+["Lucknow","Uttar Pradesh","north","Domes and city lights","Night views of Lucknow's lit-up architecture.","#6b4c93"],
+["Bihar","Bihar","north faith","Temple spires under grey skies","A temple spire against a monsoon sky, with more Bihar stops.","#5b7fa6"],
+["Tiruvannamalai","Tamil Nadu","south faith","The Annamalaiyar temple gopuram","The tall carved gopuram of the temple town.","#b0703a"],
+["Murugan","Temple visit","south faith","A giant Murugan statue","A tall, colourful Murugan statue against a blue sky.","#c1121f"],
+["Hogenakkal","Tamil Nadu","south nature","Waterfalls on the Kaveri","Rocky falls and a calm stretch of river.","#2a8a8c"],
+["Trichy","Srirangam, Tamil Nadu","south faith","The Srirangam temple","The golden gopuram of Sri Ranganathaswamy temple.","#d4a017"],
+["Isha","Coimbatore area","south faith nature","The Adiyogi statue","The huge Adiyogi under heavy clouds.","#6b7a8f"],
+["Chennai","Tamil Nadu","south","A flight, a pool and Chepauk","A Chennai trip by air, with an afternoon at Chepauk stadium.","#2f7fbf"],
+["Yercaud","Near Salem","south nature","Mist and cool skies","A quick escape to the hills close to home.","#3f8a62"],
+["Trivandrum","Kerala","south","A road trip from Salem","A long drive mapped from Salem down to Kerala.","#1d6f6a"]
+];
+var I={"Agra": "images/photo-09.jpg", "Delhi": "images/photo-10.jpg", "Lucknow": "images/photo-11.jpg", "Bihar": "images/photo-12.jpg", "Tiruvannamalai": "images/photo-13.jpg", "Murugan": "images/photo-14.jpg", "Hogenakkal": "images/photo-15.jpg", "Trichy": "images/photo-16.jpg", "Isha": "images/photo-17.jpg", "Chennai": "images/photo-18.jpg", "Yercaud": "images/photo-19.jpg", "Trivandrum": "images/photo-20.jpg"};
+var G={Delhi:["images/photo-21.jpg"],Lucknow:["images/photo-22.jpg"],Bihar:["images/photo-23.jpg"],Tiruvannamalai:["images/photo-24.jpg"],Hogenakkal:["images/photo-25.jpg"],Trichy:["images/photo-26.jpg","images/photo-27.jpg","images/photo-28.jpg"],Isha:["images/photo-29.jpg"],Agra:["images/photo-30.jpg"],Trivandrum:["images/photo-31.jpg", "images/photo-32.jpg", "images/photo-33.jpg", "images/photo-34.jpg","images/photo-35.jpg"],Chennai:["images/photo-36.jpg","images/photo-37.jpg","images/photo-38.jpg"]};
+G.Murugan=["images/photo-39.jpg"];G.Yercaud=["images/photo-40.jpg", "images/photo-41.jpg", "images/photo-42.jpg", "images/photo-43.jpg"];
+var L=document.getElementById('list');
+P.forEach(function(p){
+ var b=document.createElement('button');b.className='row';b.setAttribute('aria-expanded','false');b.dataset.t=p[2];
+ b.innerHTML='<img class="bar'+(G[p[0]]?' has':'')+'" '+(G[p[0]]?'tabindex="0" role="button" aria-label="Open '+p[0]+' photos" ':'')+'alt="'+p[0]+' highlight cover" src="'+I[p[0]]+'"><h3>'+p[0]+'</h3><span class="where">'+p[1]+'</span><span class="desc">'+p[3]+'</span><span class="more">'+p[4]+'</span>';
+ b.onclick=function(){b.setAttribute('aria-expanded',b.getAttribute('aria-expanded')==='true'?'false':'true')};
+ var ic=b.querySelector('.has');if(ic){var go=function(e){e.stopPropagation();e.preventDefault();openLb(p[0])};ic.onclick=go;ic.onkeydown=function(e){if(e.key==='Enter'||e.key===' ')go(e)}}
+ L.appendChild(b);
+});
+var lb=document.getElementById('lb'),lbi=document.getElementById('lbi');
+var CAP={Delhi:["India Gate at dusk"],Lucknow:["Old gateway, Lucknow"],Bihar:["Tomb across the water"],Tiruvannamalai:["Gopuram and birds"],Murugan:["Murugan statue"],Hogenakkal:["Hogenakkal Falls"],Trichy:["Srirangam gopuram","Temple courtyard","Gopuram under the clouds"],Isha:["Adiyogi statue"],Yercaud:["Ghat road, Yercaud","Portrait","Campfire night","Blue sky and sunrays"],Agra:["Taj Mahal, Agra"],Trivandrum:["Waves on the beach","Window seat at sunset","Azhimala Shiva","Palms and birds","Shiva statue, Trivandrum"],Chennai:["Chennai","Sea waves, Chennai","Inside the local train"]};
+function openLb(n){if(!G[n]||!G[n].length)return;lbi.innerHTML='';lbi.className='pg';
+var h=document.createElement('h2');h.textContent=n+' Gallery';lbi.appendChild(h);
+var sb=document.createElement('p');sb.className='sub';sb.textContent='Tap a photo to view it larger.';lbi.appendChild(sb);
+var gl=document.createElement('div');gl.className='gal'+(G[n].length<2?' one':'');
+G[n].forEach(function(u,k){var f=document.createElement('figure');f.className='gi';
+var i=document.createElement('img');i.src=u;i.alt=n+' photo '+(k+1);f.appendChild(i);
+var c=document.createElement('figcaption');c.textContent=(CAP[n]&&CAP[n][k])||n;f.appendChild(c);
+f.onclick=function(){f.classList.toggle('big')};gl.appendChild(f)});
+lbi.appendChild(gl);lb.hidden=false;lb.scrollTop=0;document.getElementById('lbx').focus()}
+function closeLb(){lb.hidden=true}
+document.getElementById('lbx').onclick=closeLb;lb.onclick=function(e){if(e.target===lb)closeLb()};
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb()});
+document.getElementById('tabs').onclick=function(e){
+ var c=e.target.closest('.tab');if(!c)return;
+ document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-pressed',x===c)});
+ var f=c.dataset.f;
+ document.querySelectorAll('.row').forEach(function(k){k.hidden=!(f==='all'||k.dataset.t.split(' ').indexOf(f)>-1)});
+};
+document.querySelectorAll('.gi button').forEach(function(b){b.onclick=function(){var i=b.querySelector('img');lbi.innerHTML='';lbi.className='';var n=document.createElement('img');n.src=i.src;n.alt=i.alt;lbi.appendChild(n);lb.hidden=false;document.getElementById('lbx').focus()}});
+
+// Premium interactions
+(function(){
+  var first=document.querySelector('.gal img');
+  var hero=document.getElementById('heroImage');
+  if(first&&hero) hero.src=first.src;
+  var root=document.documentElement;
+  function get(){try{return localStorage.getItem('sonu-theme')}catch(e){return null}}
+  function set(v){try{localStorage.setItem('sonu-theme',v)}catch(e){}}
+  var mq=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)');
+  var cur=get()||(mq&&mq.matches?'dark':'light');
+  root.setAttribute('data-theme',cur);
+  var t=document.getElementById('themeToggle');
+  if(t){
+    t.setAttribute('aria-pressed',cur==='dark');
+    t.onclick=function(){
+      cur=root.getAttribute('data-theme')==='dark'?'light':'dark';
+      root.setAttribute('data-theme',cur);
+      t.setAttribute('aria-pressed',cur==='dark');
+      set(cur);
+    };
+  }
+})();
+</script>
+<script>
+(function(){
+var d=document,r=d.documentElement,rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!rm&&'IntersectionObserver' in window){
+ r.classList.add('js');
+ var sel='section>h2,.sub,.fact,.gal .gi,.row,.dream div,.inq,.tabs,.route,footer';
+ var els=[].slice.call(d.querySelectorAll(sel)).filter(function(e){return !e.closest('#lb')});
+ els.forEach(function(e,i){e.classList.add('rv');e.style.setProperty('--d',((i%4)*.07)+'s')});
+ var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+ els.forEach(function(e){io.observe(e)});
+ setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},6000);
+}
+var links=[].slice.call(d.querySelectorAll('.nav-links a[href^="#"]'));
+if(links.length&&'IntersectionObserver' in window){
+ var map={};links.forEach(function(a){var t=d.querySelector(a.getAttribute('href'));if(t)map[t.id]=a});
+ var so=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){links.forEach(function(a){a.classList.remove('active')});if(map[x.target.id])map[x.target.id].classList.add('active')}})},{rootMargin:'-35% 0px -55% 0px'});
+ Object.keys(map).forEach(function(k){so.observe(d.getElementById(k))});
+}
+var tt=d.createElement('button');tt.id='totop';tt.type='button';tt.setAttribute('aria-label','Back to top');tt.textContent='\u2191';
+tt.onclick=function(){window.scrollTo({top:0,behavior:rm?'auto':'smooth'})};d.body.appendChild(tt);
+var hi=d.querySelector('.hero-media img'),tk=false;
+function onS(){tk=false;var y=window.scrollY;tt.classList.toggle('show',y>600);}
+window.addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(onS)}},{passive:true});onS();
+d.addEventListener('keydown',function(e){if(e.key==='Escape'){var l=d.getElementById('lb');if(l&&!l.hidden)l.hidden=true}});
+})();
+</script>
+<script>
+(function(){
+var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.addEventListener('click',function(e){
+ var a=e.target.closest&&e.target.closest('a[href^="#"]');
+ if(a){var id=a.getAttribute('href').slice(1),t=id&&document.getElementById(id);
+  if(t){e.preventDefault();t.scrollIntoView({behavior:rm?'auto':'smooth',block:'start'})}}
+ var g=e.target.closest&&e.target.closest('.gal .gi');
+ if(g&&!e.target.closest('#lb')){g.classList.remove('tap');void g.offsetWidth;g.classList.add('tap')}
+},true);
+})();
+</script>
+<script>document.getElementById("copyMail").addEventListener("click",function(){var b=this,t="sonukumar22bca@gmail.com";function ok(){b.textContent="Copied!";setTimeout(function(){b.textContent="Copy"},1800)}try{navigator.clipboard.writeText(t).then(ok,function(){prompt("Copy this email:",t)})}catch(e){prompt("Copy this email:",t)}});</script>
+</body>
+</html>
